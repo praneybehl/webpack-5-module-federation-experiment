@@ -10,7 +10,7 @@ module.exports = {
     port: 3002,
   },
   output: {
-    publicPath: "http://localhost:3002/",
+    publicPath: !prod ? "http://localhost:3001/": "https://webpack5-md-fed-app2.netlify.app",
   },
   module: {
     rules: [
